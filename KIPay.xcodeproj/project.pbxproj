@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1803DA561BF1747F00354DE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DA551BF1747F00354DE5 /* main.m */; };
+		1803DA591BF1747F00354DE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DA581BF1747F00354DE5 /* AppDelegate.m */; };
+		1803DA5C1BF1747F00354DE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DA5B1BF1747F00354DE5 /* ViewController.m */; };
+		1803DA5F1BF1747F00354DE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1803DA5D1BF1747F00354DE5 /* Main.storyboard */; };
+		1803DA611BF1747F00354DE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1803DA601BF1747F00354DE5 /* Images.xcassets */; };
+		1803DA641BF1747F00354DE5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1803DA621BF1747F00354DE5 /* LaunchScreen.xib */; };
+		1803DA701BF1747F00354DE5 /* KIPayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DA6F1BF1747F00354DE5 /* KIPayTests.m */; };
+		1803DB641BF1949D00354DE5 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DB481BF1949D00354DE5 /* Order.m */; };
+		1803DB651BF1949D00354DE5 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1803DB4A1BF1949D00354DE5 /* AlipaySDK.bundle */; };
+		1803DB661BF1949D00354DE5 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1803DB4B1BF1949D00354DE5 /* AlipaySDK.framework */; };
+		1803DB671BF1949D00354DE5 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DB4E1BF1949D00354DE5 /* base64.m */; };
+		1803DB681BF1949D00354DE5 /* DataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DB511BF1949D00354DE5 /* DataSigner.m */; };
+		1803DB691BF1949D00354DE5 /* DataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DB531BF1949D00354DE5 /* DataVerifier.m */; };
+		1803DB6A1BF1949D00354DE5 /* MD5DataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DB551BF1949D00354DE5 /* MD5DataSigner.m */; };
+		1803DB6B1BF1949D00354DE5 /* NSDataEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DB571BF1949D00354DE5 /* NSDataEx.m */; };
+		1803DB6C1BF1949D00354DE5 /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DB591BF1949D00354DE5 /* openssl_wrapper.m */; };
+		1803DB6D1BF1949D00354DE5 /* RSADataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DB5B1BF1949D00354DE5 /* RSADataSigner.m */; };
+		1803DB6E1BF1949D00354DE5 /* RSADataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DB5D1BF1949D00354DE5 /* RSADataVerifier.m */; };
+		1803DB6F1BF1949D00354DE5 /* KIAliPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DB5F1BF1949D00354DE5 /* KIAliPay.m */; };
+		1803DB701BF1949D00354DE5 /* KIPayPal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DB631BF1949D00354DE5 /* KIPayPal.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1803DA6A1BF1747F00354DE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1803DA481BF1747F00354DE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1803DA4F1BF1747F00354DE5;
+			remoteInfo = KIPay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1803DA501BF1747F00354DE5 /* KIPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1803DA541BF1747F00354DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1803DA551BF1747F00354DE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1803DA571BF1747F00354DE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1803DA581BF1747F00354DE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1803DA5A1BF1747F00354DE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1803DA5B1BF1747F00354DE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1803DA5E1BF1747F00354DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1803DA601BF1747F00354DE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1803DA631BF1747F00354DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1803DA691BF1747F00354DE5 /* KIPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1803DA6E1BF1747F00354DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1803DA6F1BF1747F00354DE5 /* KIPayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIPayTests.m; sourceTree = "<group>"; };
+		1803DB471BF1949D00354DE5 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		1803DB481BF1949D00354DE5 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		1803DB4A1BF1949D00354DE5 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		1803DB4B1BF1949D00354DE5 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		1803DB4D1BF1949D00354DE5 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		1803DB4E1BF1949D00354DE5 /* base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = base64.m; sourceTree = "<group>"; };
+		1803DB4F1BF1949D00354DE5 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		1803DB501BF1949D00354DE5 /* DataSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSigner.h; sourceTree = "<group>"; };
+		1803DB511BF1949D00354DE5 /* DataSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSigner.m; sourceTree = "<group>"; };
+		1803DB521BF1949D00354DE5 /* DataVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataVerifier.h; sourceTree = "<group>"; };
+		1803DB531BF1949D00354DE5 /* DataVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataVerifier.m; sourceTree = "<group>"; };
+		1803DB541BF1949D00354DE5 /* MD5DataSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5DataSigner.h; sourceTree = "<group>"; };
+		1803DB551BF1949D00354DE5 /* MD5DataSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5DataSigner.m; sourceTree = "<group>"; };
+		1803DB561BF1949D00354DE5 /* NSDataEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataEx.h; sourceTree = "<group>"; };
+		1803DB571BF1949D00354DE5 /* NSDataEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataEx.m; sourceTree = "<group>"; };
+		1803DB581BF1949D00354DE5 /* openssl_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openssl_wrapper.h; sourceTree = "<group>"; };
+		1803DB591BF1949D00354DE5 /* openssl_wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openssl_wrapper.m; sourceTree = "<group>"; };
+		1803DB5A1BF1949D00354DE5 /* RSADataSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSADataSigner.h; sourceTree = "<group>"; };
+		1803DB5B1BF1949D00354DE5 /* RSADataSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSADataSigner.m; sourceTree = "<group>"; };
+		1803DB5C1BF1949D00354DE5 /* RSADataVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSADataVerifier.h; sourceTree = "<group>"; };
+		1803DB5D1BF1949D00354DE5 /* RSADataVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSADataVerifier.m; sourceTree = "<group>"; };
+		1803DB5E1BF1949D00354DE5 /* KIAliPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIAliPay.h; sourceTree = "<group>"; };
+		1803DB5F1BF1949D00354DE5 /* KIAliPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIAliPay.m; sourceTree = "<group>"; };
+		1803DB601BF1949D00354DE5 /* KIPayDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIPayDefine.h; sourceTree = "<group>"; };
+		1803DB621BF1949D00354DE5 /* KIPayPal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIPayPal.h; sourceTree = "<group>"; };
+		1803DB631BF1949D00354DE5 /* KIPayPal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIPayPal.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1803DA4D1BF1747F00354DE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1803DB661BF1949D00354DE5 /* AlipaySDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1803DA661BF1747F00354DE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1803DA471BF1747F00354DE5 = {
+			isa = PBXGroup;
+			children = (
+				1803DA521BF1747F00354DE5 /* KIPay */,
+				1803DA6C1BF1747F00354DE5 /* KIPayTests */,
+				1803DA511BF1747F00354DE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1803DA511BF1747F00354DE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1803DA501BF1747F00354DE5 /* KIPay.app */,
+				1803DA691BF1747F00354DE5 /* KIPayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1803DA521BF1747F00354DE5 /* KIPay */ = {
+			isa = PBXGroup;
+			children = (
+				1803DB441BF1949D00354DE5 /* KIPay */,
+				1803DA571BF1747F00354DE5 /* AppDelegate.h */,
+				1803DA581BF1747F00354DE5 /* AppDelegate.m */,
+				1803DA5A1BF1747F00354DE5 /* ViewController.h */,
+				1803DA5B1BF1747F00354DE5 /* ViewController.m */,
+				1803DA5D1BF1747F00354DE5 /* Main.storyboard */,
+				1803DA601BF1747F00354DE5 /* Images.xcassets */,
+				1803DA621BF1747F00354DE5 /* LaunchScreen.xib */,
+				1803DA531BF1747F00354DE5 /* Supporting Files */,
+			);
+			path = KIPay;
+			sourceTree = "<group>";
+		};
+		1803DA531BF1747F00354DE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1803DA541BF1747F00354DE5 /* Info.plist */,
+				1803DA551BF1747F00354DE5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1803DA6C1BF1747F00354DE5 /* KIPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				1803DA6F1BF1747F00354DE5 /* KIPayTests.m */,
+				1803DA6D1BF1747F00354DE5 /* Supporting Files */,
+			);
+			path = KIPayTests;
+			sourceTree = "<group>";
+		};
+		1803DA6D1BF1747F00354DE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1803DA6E1BF1747F00354DE5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1803DB441BF1949D00354DE5 /* KIPay */ = {
+			isa = PBXGroup;
+			children = (
+				1803DB451BF1949D00354DE5 /* KIAliPay */,
+				1803DB601BF1949D00354DE5 /* KIPayDefine.h */,
+				1803DB611BF1949D00354DE5 /* KIPayPal */,
+			);
+			path = KIPay;
+			sourceTree = "<group>";
+		};
+		1803DB451BF1949D00354DE5 /* KIAliPay */ = {
+			isa = PBXGroup;
+			children = (
+				1803DB461BF1949D00354DE5 /* External */,
+				1803DB5E1BF1949D00354DE5 /* KIAliPay.h */,
+				1803DB5F1BF1949D00354DE5 /* KIAliPay.m */,
+			);
+			path = KIAliPay;
+			sourceTree = "<group>";
+		};
+		1803DB461BF1949D00354DE5 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				1803DB471BF1949D00354DE5 /* Order.h */,
+				1803DB481BF1949D00354DE5 /* Order.m */,
+				1803DB491BF1949D00354DE5 /* SDK */,
+				1803DB4C1BF1949D00354DE5 /* Util */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		1803DB491BF1949D00354DE5 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				1803DB4A1BF1949D00354DE5 /* AlipaySDK.bundle */,
+				1803DB4B1BF1949D00354DE5 /* AlipaySDK.framework */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		1803DB4C1BF1949D00354DE5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				1803DB4D1BF1949D00354DE5 /* base64.h */,
+				1803DB4E1BF1949D00354DE5 /* base64.m */,
+				1803DB4F1BF1949D00354DE5 /* config.h */,
+				1803DB501BF1949D00354DE5 /* DataSigner.h */,
+				1803DB511BF1949D00354DE5 /* DataSigner.m */,
+				1803DB521BF1949D00354DE5 /* DataVerifier.h */,
+				1803DB531BF1949D00354DE5 /* DataVerifier.m */,
+				1803DB541BF1949D00354DE5 /* MD5DataSigner.h */,
+				1803DB551BF1949D00354DE5 /* MD5DataSigner.m */,
+				1803DB561BF1949D00354DE5 /* NSDataEx.h */,
+				1803DB571BF1949D00354DE5 /* NSDataEx.m */,
+				1803DB581BF1949D00354DE5 /* openssl_wrapper.h */,
+				1803DB591BF1949D00354DE5 /* openssl_wrapper.m */,
+				1803DB5A1BF1949D00354DE5 /* RSADataSigner.h */,
+				1803DB5B1BF1949D00354DE5 /* RSADataSigner.m */,
+				1803DB5C1BF1949D00354DE5 /* RSADataVerifier.h */,
+				1803DB5D1BF1949D00354DE5 /* RSADataVerifier.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		1803DB611BF1949D00354DE5 /* KIPayPal */ = {
+			isa = PBXGroup;
+			children = (
+				1803DB621BF1949D00354DE5 /* KIPayPal.h */,
+				1803DB631BF1949D00354DE5 /* KIPayPal.m */,
+			);
+			path = KIPayPal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1803DA4F1BF1747F00354DE5 /* KIPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1803DA731BF1747F00354DE5 /* Build configuration list for PBXNativeTarget "KIPay" */;
+			buildPhases = (
+				1803DA4C1BF1747F00354DE5 /* Sources */,
+				1803DA4D1BF1747F00354DE5 /* Frameworks */,
+				1803DA4E1BF1747F00354DE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KIPay;
+			productName = KIPay;
+			productReference = 1803DA501BF1747F00354DE5 /* KIPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1803DA681BF1747F00354DE5 /* KIPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1803DA761BF1747F00354DE5 /* Build configuration list for PBXNativeTarget "KIPayTests" */;
+			buildPhases = (
+				1803DA651BF1747F00354DE5 /* Sources */,
+				1803DA661BF1747F00354DE5 /* Frameworks */,
+				1803DA671BF1747F00354DE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1803DA6B1BF1747F00354DE5 /* PBXTargetDependency */,
+			);
+			name = KIPayTests;
+			productName = KIPayTests;
+			productReference = 1803DA691BF1747F00354DE5 /* KIPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1803DA481BF1747F00354DE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = smartwalle;
+				TargetAttributes = {
+					1803DA4F1BF1747F00354DE5 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					1803DA681BF1747F00354DE5 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 1803DA4F1BF1747F00354DE5;
+					};
+				};
+			};
+			buildConfigurationList = 1803DA4B1BF1747F00354DE5 /* Build configuration list for PBXProject "KIPay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1803DA471BF1747F00354DE5;
+			productRefGroup = 1803DA511BF1747F00354DE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1803DA4F1BF1747F00354DE5 /* KIPay */,
+				1803DA681BF1747F00354DE5 /* KIPayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1803DA4E1BF1747F00354DE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1803DA5F1BF1747F00354DE5 /* Main.storyboard in Resources */,
+				1803DA641BF1747F00354DE5 /* LaunchScreen.xib in Resources */,
+				1803DB651BF1949D00354DE5 /* AlipaySDK.bundle in Resources */,
+				1803DA611BF1747F00354DE5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1803DA671BF1747F00354DE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1803DA4C1BF1747F00354DE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1803DB671BF1949D00354DE5 /* base64.m in Sources */,
+				1803DA5C1BF1747F00354DE5 /* ViewController.m in Sources */,
+				1803DB6B1BF1949D00354DE5 /* NSDataEx.m in Sources */,
+				1803DB6F1BF1949D00354DE5 /* KIAliPay.m in Sources */,
+				1803DB701BF1949D00354DE5 /* KIPayPal.m in Sources */,
+				1803DB6A1BF1949D00354DE5 /* MD5DataSigner.m in Sources */,
+				1803DB6E1BF1949D00354DE5 /* RSADataVerifier.m in Sources */,
+				1803DA591BF1747F00354DE5 /* AppDelegate.m in Sources */,
+				1803DB681BF1949D00354DE5 /* DataSigner.m in Sources */,
+				1803DB6D1BF1949D00354DE5 /* RSADataSigner.m in Sources */,
+				1803DB6C1BF1949D00354DE5 /* openssl_wrapper.m in Sources */,
+				1803DB641BF1949D00354DE5 /* Order.m in Sources */,
+				1803DA561BF1747F00354DE5 /* main.m in Sources */,
+				1803DB691BF1949D00354DE5 /* DataVerifier.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1803DA651BF1747F00354DE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1803DA701BF1747F00354DE5 /* KIPayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1803DA6B1BF1747F00354DE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1803DA4F1BF1747F00354DE5 /* KIPay */;
+			targetProxy = 1803DA6A1BF1747F00354DE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1803DA5D1BF1747F00354DE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1803DA5E1BF1747F00354DE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1803DA621BF1747F00354DE5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1803DA631BF1747F00354DE5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1803DA711BF1747F00354DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1803DA721BF1747F00354DE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1803DA741BF1747F00354DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KIPay/KIPay/External/Alipay/SDK",
+					"$(PROJECT_DIR)/KIPay/KIPay/KIAliPay/External/SDK",
+				);
+				INFOPLIST_FILE = KIPay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KIPay/KIPay/External/Alipay/SDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1803DA751BF1747F00354DE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KIPay/KIPay/External/Alipay/SDK",
+					"$(PROJECT_DIR)/KIPay/KIPay/KIAliPay/External/SDK",
+				);
+				INFOPLIST_FILE = KIPay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KIPay/KIPay/External/Alipay/SDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1803DA771BF1747F00354DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KIPayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KIPay.app/KIPay";
+			};
+			name = Debug;
+		};
+		1803DA781BF1747F00354DE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KIPayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KIPay.app/KIPay";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1803DA4B1BF1747F00354DE5 /* Build configuration list for PBXProject "KIPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1803DA711BF1747F00354DE5 /* Debug */,
+				1803DA721BF1747F00354DE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1803DA731BF1747F00354DE5 /* Build configuration list for PBXNativeTarget "KIPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1803DA741BF1747F00354DE5 /* Debug */,
+				1803DA751BF1747F00354DE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1803DA761BF1747F00354DE5 /* Build configuration list for PBXNativeTarget "KIPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1803DA771BF1747F00354DE5 /* Debug */,
+				1803DA781BF1747F00354DE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1803DA481BF1747F00354DE5 /* Project object */;
+}
